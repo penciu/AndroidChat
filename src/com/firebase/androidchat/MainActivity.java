@@ -64,7 +64,7 @@ public class MainActivity extends ListActivity {
         // Setup our view and list adapter. Ensure it scrolls to the bottom as data changes
         final ListView listView = getListView();
         // Tell our list adapter that we only want 50 messages at a time
-        chatListAdapter = new ChatListAdapter(ref.limit(50), this, R.layout.chat_message, username);
+        chatListAdapter = new ChatListAdapter(ref, this, R.layout.chat_message, username);
         listView.setAdapter(chatListAdapter);
         chatListAdapter.registerDataSetObserver(new DataSetObserver() {
             @Override
