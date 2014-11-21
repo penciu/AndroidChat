@@ -1,5 +1,6 @@
 package com.firebase.androidchat;
 
+import im.delight.android.ddp.firebase.FirebaseError;
 import android.app.ListActivity;
 import android.content.SharedPreferences;
 import android.database.DataSetObserver;
@@ -11,7 +12,6 @@ import android.widget.*;
 import im.delight.android.ddp.firebase.DataSnapshot;
 import im.delight.android.ddp.firebase.Firebase;
 import im.delight.android.ddp.firebase.ValueEventListener;
-
 import java.util.Random;
 
 public class MainActivity extends ListActivity {
@@ -87,7 +87,7 @@ public class MainActivity extends ListActivity {
             }
 
             @Override
-            public void onCancelled() {
+            public void onCancelled(FirebaseError error) {
                 // No-op
             }
         });
