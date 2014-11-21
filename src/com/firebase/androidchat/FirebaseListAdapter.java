@@ -6,9 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import com.firebase.client.ChildEventListener;
-import com.firebase.client.DataSnapshot;
-import com.firebase.client.Query;
+import im.delight.android.ddp.firebase.ChildEventListener;
+import im.delight.android.ddp.firebase.DataSnapshot;
+import im.delight.android.ddp.firebase.Query;
 
 import java.util.ArrayList;
 import java.util.HashMap;

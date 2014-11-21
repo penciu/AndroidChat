@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.graphics.Color;
 import android.view.View;
 import android.widget.TextView;
-import com.firebase.client.Query;
+import im.delight.android.ddp.firebase.Query;
 
 /**
  * User: greg

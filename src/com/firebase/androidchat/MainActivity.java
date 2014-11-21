@@ -8,16 +8,16 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.*;
-import com.firebase.client.DataSnapshot;
-import com.firebase.client.Firebase;
-import com.firebase.client.ValueEventListener;
+import im.delight.android.ddp.firebase.DataSnapshot;
+import im.delight.android.ddp.firebase.Firebase;
+import im.delight.android.ddp.firebase.ValueEventListener;
 
 import java.util.Random;
 
 public class MainActivity extends ListActivity {
 
-    // TODO: change this to your own Firebase URL
-    private static final String FIREBASE_URL = "https://android-chat.firebaseIO-demo.com";
+    // TODO: change this to your own Meteor URL
+    private static final String FIREBASE_URL = "ws://example.meteor.com/websocket";
 
     private String username;
     private Firebase ref;
